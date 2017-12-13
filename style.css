@@ -1,7 +1,233 @@
-/* this is the stylesheet for my personal site index */
+/* this is the stylesheet for 老爹的個人網站 index */
+
+/* 基礎版面設定 */
 
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+#content {
+  position: relative;     /* 解決content被nav遮蔽的問題 */
+  margin-top: 80px;
+  padding: 15px;
+}
+
+#content > .container > div {     /* 解決區塊被遮蔽的問題 */
+  padding: 80px 0;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+hr.bar {
+  width: 150px;
+  border: 3px solid #800000;
+}
+
+/* 導覽列設定 */
+
+#nav {
+  width: 100%;
+  padding: 2px;
+  background-color: #AA0000;
+  position: fixed;      /* 導覽列永久置頂 */
+  top: 0;
+  left: 0;
+  z-index: 100;     /* 導覽列永遠高於其他元素 */
+}
+
+#nav .menu {
+  float: right;     /* 選單靠右 */
+}
+
+#nav .menu li {
+  background-color: #800000;
+  width: 100px;
+  padding: 10px 0px;
+  display: inline-block;      /* 使選單選項橫向排列 */
+  border-radius: 5px;
+  list-style-type: none;      /* 消除清單符號 */
+  text-align: center;
+}
+
+.menu li a {
+  display: block; 
+  color: #fff;
+  text-decoration: none;      /* 消除連結文字預設效果 */
+}
+
+.menu li:hover {
+  border: 2px solid #fff;     /* 當滑鼠經過顯示白色邊框 */ 
+}
+
+/* 個人簡介設定 */
+
+#my-avatar {
+  float: left;
+  margin: 20px;
+}
+
+#my-avatar img {
+  width: 300px;
+}
+
+#my-info {
+  display: block;
+  margin: 20px;
+}
+
+#my-info h1 {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#my-info h3 {
+  margin-top: 0;
+  text-align: left;
+}
+
+table {
+  font-size: 14px;
+  text-align: left;
+}
+
+th, td {
+  vertical-align: top;
+}
+
+th {
+  width: 30%;
+}
+
+td {
+  color: #666;
+  padding-left: 10px;
+}
+
+#my-info hr {
+  border: 0.5px solid #eee;
+}
+
+/* 出版著作 */
+
+#publication {
+  text-align: center;
+}
+
+.pub-item {
+  position: relative;
+  max-width: 30%;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.pub-item img {
+  width: 100%;
+}
+
+.pub-item-info {
+  background-color: rgba(255,255,255,.8);     /* 半透明背景 */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  padding: 10px 10px;
+
+  display: none;
+}
+
+.pub-item:hover .pub-item-info {
+  display: block;
+}
+
+/* 與老爹聯絡設定 */
+
+#contact-me {
+  width: 100%;
+  background-color: #ddd;
+  border: 1px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#contact-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row input, .form-row textarea {      /* 修改訊息輸入框 */
+  border-radius: 3px;
+  width: 100%;
+  border: 1px solid #d6d9dc;
+  padding: 7px;
+}
+
+.form-row textarea {
+  resize: none;
+  height: 8em;
+}
+
+.form-row button {      /* 修改按鈕 */
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.form-row button[type="submit"] {
+  background-color: #5995da;
+  color: #ffffff;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+form.contact-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+
+/* 版權聲明設定 */
+
+#footer {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  background-color: #000;
+  color: gray;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer p {
+  width: 300px;
+  margin: 0 auto;
 }
 

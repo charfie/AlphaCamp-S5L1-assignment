@@ -1,11 +1,158 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Charfie's personal site</title>
+    <title>福田心耕｜家風傳承</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
+    <!-- 導覽列 BEGIN -->
+    <div id="nav">
+      <div class="container">
+        <!-- 首頁選項 -->
+        <ul class="menu">
+          <li><a href="#about">關於我</a></li>
+          <li><a href="#publication">發表著作</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#contact-me">與我聯絡</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 導覽列 END -->
+    <!-- 網頁主要內容 BEGIN -->
+    <div id="content">
+      <div class="container">
+        <!-- 個人簡介 BEGIN -->
+        <div id="about">
+          <!-- 個人照 BEGIN -->
+          <div id="my-avatar">
+            <img src="http://lorempixel.com/300/300/" alt="何福田教授">
+          </div>
+          <!-- 個人照 END -->
+          <div id="my-info">
+            <h1>何福田教授</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, soluta.</h3>
+            <hr>
+            <!-- 學經歷簡表 BEGIN -->
+            <table>
+              <tr>
+                <th>經歷</th>
+                <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente reprehenderit quos cupiditate nihil, quibusdam ab. Maiores magnam sunt, asperiores aliquid non perferendis error in repellendus, voluptatem unde cumque est quibusdam!
+                </td>
+              </tr>
+              <tr>
+                <th>學歷</th>
+                <td>
+                Lorem ipsum dolor sit amet.<br>
+                Lorem ipsum dolor sit amet.<br>
+                Lorem ipsum dolor sit amet.<br>
+                Lorem ipsum dolor sit amet.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- 學經歷簡表 END -->
+      </div>
+      <!-- 個人簡介 END -->
+      <hr class="bar">
+      <!-- 歷年發表著作 BEGIN -->
+      <div id="publication">
+        <div class="container">
+          <h1>發表著作</h1>   <!-- 圖片為300*300，說明文字可能不能超過20字 -->
+          <div class="pub-item">
+            <img src="http://lorempixel.com/300/300/" alt="book-name-01">
+            <div class="pub-item-info">
+              <h3><a href="#">BOOK NAME 01</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptate!</p>
+            </div>
+          </div>
+          <div class="pub-item">
+            <img src="http://lorempixel.com/300/300/" alt="book-name-02">
+            <div class="pub-item-info">
+              <h3><a href="#">BOOK NAME 02</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptate!</p>
+            </div>
+          </div>
+          <div class="pub-item">
+            <img src="http://lorempixel.com/300/300/" alt="book-name-03">
+            <div class="pub-item-info">
+              <h3><a href="#">BOOK NAME 03</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptate!</p>
+            </div>
+          </div>
+          <div class="pub-item">
+            <img src="http://lorempixel.com/300/300/" alt="book-name-04">
+            <div class="pub-item-info">
+              <h3><a href="#">BOOK NAME 04</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptate!</p>
+            </div>
+          </div>
+          <div class="pub-item">
+            <img src="http://lorempixel.com/300/300/" alt="book-name-05">
+            <div class="pub-item-info">
+              <h3><a href="#">BOOK NAME 05</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptate!</p>
+            </div>
+          </div>
+          <div class="pub-item">
+            <img src="http://lorempixel.com/300/300/" alt="book-name-06">
+            <div class="pub-item-info">
+              <h3><a href="#">BOOK NAME 06</a></h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, voluptate!</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <!-- 歷年發表著作 END -->
+      <hr class="bar">
+<!-- 本區未完待續 -->
+      <!-- 近期演講行程 -->
+      <div id="schedule"></div>
+      <!-- 部落格最新文章 -->
+      <div id="recent-posts">
+        <div id="subscribe"></div>
+      </div>
+<!-- 本區未完待續 -->
+      <!-- 與我聯絡 BEGIN -->
+      <div id="contact-me">
+        <div id="container">  
+          <h1>與我聯絡</h1>
+          <div id="contact-form">  
+            <form action="" method="post" class="contact-form">
+              <div class="form-row">
+                <label for="name">NAME</label>
+                <input id="name" name="name" type="text">
+              </div> 
+              <div class="form-row">
+                <label for="email">EMAIL</label>
+                <input id="email" name="email" type="email">
+              </div>
+              <div class="form-row">
+                <label for="message">MESSAGE</label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <div class="form-row">
+                <button type="reset">RESET</button>
+                <button type="submit">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- 與我聯絡 END -->
+      </div>
+      <!-- 版權聲明 BEGIN -->
+      <div id="footer">
+        <div class="container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic tenetur laborum, non harum dolor tempore, recusandae sit maxime perferendis animi.
+          </p>
+        </div>
+      </div>
+      <!-- 版權聲明 END -->
+    </div>
+    <!-- content END -->
   </body>
 </html>
